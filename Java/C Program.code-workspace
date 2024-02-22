@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../C Program"
+	},
+	{
+		"path": "../C++ Program"
+	},
+	{
+		"path": "../Calculator"
+	},
+	{
+		"path": "../Fish"
+	},
+	{
+		"path": "../HTML"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Calculator"
+  }
+}
