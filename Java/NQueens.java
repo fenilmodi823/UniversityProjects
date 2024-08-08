@@ -19,7 +19,7 @@ public class NQueens {
         for (int col = 0; col < size; col++) {
             if (isSafe(row, col)) {
                 board[row] = col;
-                if(placeQueen(row + 1)) {
+                if (placeQueen(row + 1)) {
                     return true;
                 }
             }
@@ -28,7 +28,7 @@ public class NQueens {
     }
 
     private boolean isSafe(int row, int col) {
-        for (int i = 0; i< row; i++) {
+        for (int i = 0; i < row; i++) {
             int queenCol = board[i];
             if (queenCol == col || Math.abs(queenCol - col) == Math.abs(i - row)) {
                 return false;
@@ -37,26 +37,26 @@ public class NQueens {
         return true;
     }
 
-        public void printSolution() {
-            for (int row = 0; row < size; row++) {
-                for (int col = 0; col < size; col++) {
-                    if (board[row] == col) {
-                        System.out.print("Q ");
-                    } else {
-                        System.out.print(". ");
-                    }
+    public void printSolution() {
+        for (int row = 0; row < size; row++) {
+            for (int col = 0; col < size; col++) {
+                if (board[row] == col) {
+                    System.out.print("Q ");
+                } else {
+                    System.out.print(". ");
                 }
-                System.out.println();
             }
-        }
-
-        public static void main(String[] args) {
-            int size = 8;
-            NQueens queens = new NQueens(size);
-            if (queens.solve()) {
-                queens.printSolution();
-            } else {
-                System.out.println("No solution exists");
-            }
+            System.out.println();
         }
     }
+
+    public static void main(String[] args) {
+        int size = 8;
+        NQueens queens = new NQueens(size);
+        if (queens.solve()) {
+            queens.printSolution();
+        } else {
+            System.out.println("No solution exists");
+        }
+    }
+}
