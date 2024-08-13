@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Astronomy Lessons</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Interactive Astronomy Lessons</h1>
+        <p>
+          Learn about celestial bodies through interactive lessons and
+          simulations.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="lessons">
+        <h2>Interactive Lessons</h2>
+        <p>Explore the wonders of the universe with our interactive lessons</p>
+        <ul>
+          <li>
+            <a href="lesson1.html" onclick="startLesson('lesson1')"
+              >Lesson 1: Introduction to Astronomy</a
+            >
+          </li>
+          <li>
+            <a href="lesson2.html" onclick="startLesson('lesson2')"
+              >Lesson 2: Solar System Exploration</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="simulations">
+        <h2>Simulations</h2>
+        <p>Experience astronomy through hands-on simulations:</p>
+        <ul>
+          <li>
+            <a href="simulation1.html" onclick="startsSimulation('simulation1')"
+              >Simulation1: Orbits and Gravity</a
+            >
+          </li>
+          <li>
+            <a href="simulation2.html" onclick="startsSimulation('simulation2')"
+              >Simulation 2: Day and Night Cycle</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Add link to user profile page -->
+      <section id="profile">
+        <h2>User Profile</h2>
+        <p>View and manage your user profile:</p>
+        <ul>
+          <li>
+            <a href="userProfile.html">User Profile</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="login-signup-links">
+        <a href="login.html">Login</a> | <a href="signup.html">Sign Up</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Interactive Astronomy Lessons. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
